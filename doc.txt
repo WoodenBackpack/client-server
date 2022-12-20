@@ -1,0 +1,20 @@
+The project currently contains two main files:
+1. server/main.cpp
+2. main.cpp
+These are client and server applications.
+There is no implementation using HTTP protocol, for now
+the communication is using sockets only.
+
+Messages sent by client is in format:
+
+operation type | number of ints | ints
+    32 bits    |    32 bits     | [...]
+   1 = sort    |                |
+   2 = reverse |                |
+
+In order to provide working solution first I have decided
+to not plan application architecture yet and implement
+everyting in main.cpp files.
+
+In order to run the app first run the server main then
+the client.
